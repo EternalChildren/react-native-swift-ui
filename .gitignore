@@ -1,0 +1,17 @@
+# Xcode
+*.xcuserstate
+
+# Watchman
+.watchmanconfig
+
+# VSCode
+.vscode/
+
+# Node
+node_modules/
+*.log
+.nvm
+
+# OSX
+.DS_Store
+
