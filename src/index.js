@@ -5,5 +5,5 @@ import Tooltip from "./Tooltip"
 export {
   SwitchSelector,
   Swiper,
-  Tooltip
+  Tooltip,
 }

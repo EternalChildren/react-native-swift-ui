@@ -1,6 +1,6 @@
 {
   "name": "react-native-swift-ui",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -19,10 +19,6 @@
   ],
   "author": "EternalChildren",
   "license": "ISC",
-  "peerDependencies":{
-    "@types/react-navigation": "file:./@types/react-navigation",
-    "@types/react-native":"file:./@types/react-native"
-  },
   "bugs": {
     "url": "https://github.com/EternalChildren/react-native-swift-ui/issues"
   },
