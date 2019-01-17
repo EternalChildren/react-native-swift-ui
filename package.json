@@ -1,12 +1,9 @@
 {
   "name": "react-native-swift-ui",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "src/index.js",
   "types": "src/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EternalChildren/react-native-swift-ui.git"
@@ -26,7 +23,6 @@
   "dependencies": {
     "react-native-snap-carousel": "^3.7.5",
     "react-native-swiper": "^1.5.14",
-    "react-native-switch-selector": "^1.1.10",
-    "rn-tooltip": "^1.0.1"
+    "react-native-switch-selector": "^1.1.10"
   }
 }
