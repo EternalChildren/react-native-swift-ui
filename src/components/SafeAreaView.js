@@ -10,7 +10,7 @@ export default class SafeAreaView extends React.PureComponent {
     const { light, backgroundColor, topColor, bottomColor, children } = this.props
     return Platform.OS === 'ios'
       ? (
-        <NativeSafeAreaView style={[styles.container, { backgroundColor: backgroundColor || 'rgba(0,0,0,0)' }]}>
+        <NativeSafeAreaView style={[styles.container, { backgroundColor: backgroundColor || '#fff' }]}>
           <StatusBar barStyle={light ? 'light-content' : 'dark-content'} />
           <View style={[
             styles.top,
@@ -42,7 +42,7 @@ export default class SafeAreaView extends React.PureComponent {
         </NativeSafeAreaView>
       )
       : (
-        <NativeSafeAreaView style={[styles.container, { backgroundColor: backgroundColor || 'rgba(0,0,0,0)' }]}>
+        <NativeSafeAreaView style={[styles.container, { backgroundColor: backgroundColor || '#fff' }]}>
           <StatusBar translucent backgroundColor={'#000'} barStyle='light-content' />
           <View style={[
             styles.status_extra_height,
