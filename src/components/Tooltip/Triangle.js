@@ -1,13 +1,13 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import React from 'react'
+import { View, StyleSheet } from 'react-native'
 
 const Triangle = ({ style, isDown }) => (
   <View style={[styles.triangle, style, isDown ? styles.down : {}]} />
-);
+)
 
 const styles = StyleSheet.create({
   down: {
-    transform: [{ rotate: '180deg' }],
+    transform: [{ rotate: '180deg' }]
   },
   triangle: {
     width: 0,
@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 15,
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
-    borderBottomColor: 'white',
-  },
-});
+    borderBottomColor: 'white'
+  }
+})
 
-export default Triangle;
+export default Triangle

@@ -22,7 +22,6 @@
   "homepage": "https://github.com/EternalChildren/react-native-swift-ui#readme",
   "dependencies": {
     "react-native-snap-carousel": "^3.7.5",
-    "react-native-swiper": "^1.5.14",
     "react-native-switch-selector": "^1.1.10"
   },
   "devDependencies": {

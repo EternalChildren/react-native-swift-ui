@@ -2,18 +2,18 @@
 // Created by EternalChildren on 2019/01/12.
 // Copyright © 2019年 Shanghai Zane Network Technology Co., Ltd. All rights reserved.
 //
-import { Dimensions, Platform } from "react-native"
-import { handlerTimestamps } from "./util"
+import { Dimensions, Platform } from 'react-native'
+import { handlerTimestamps } from './util'
 
 /**
  * 验证当前设备是否是iPohneX
  */
 export function isIphoneX () {
-  const { width, height } = Dimensions.get("window")
+  const { width, height } = Dimensions.get('window')
   const X_WIDTH = 375
   const X_HEIGHT = 812
-  return Platform.OS === "ios"
-    && ((width === X_HEIGHT && height === X_WIDTH) || (width === X_WIDTH && height === X_HEIGHT))
+  return Platform.OS === 'ios' &&
+    ((width === X_HEIGHT && height === X_WIDTH) || (width === X_WIDTH && height === X_HEIGHT))
 }
 
 /**
@@ -46,6 +46,6 @@ export function isSameDay (day, otherday) {
  * 验证字符串是否存在emoji
  */
 export function isEmojiCharacterInString (str) {
-  const reg = new RegExp("^[\u4e00-\u9fa5_a-zA-Z0-9]+$")
+  const reg = new RegExp('^[\u4e00-\u9fa5_a-zA-Z0-9]+$')
   return !str.match(reg)
 }

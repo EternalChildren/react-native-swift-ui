@@ -15,13 +15,16 @@ import getTooltipCoordinate from './getTooltipCoordinate';
 const ViewPropTypes = RNViewPropTypes || View.propTypes;
 
 class Tooltip extends React.Component {
-  state = {
-    isVisible: false,
-    yOffset: 0,
-    xOffset: 0,
-    elementWidth: 0,
-    elementHeight: 0,
-  };
+  constructor(props){
+    super(props)
+    this.state = {
+      isVisible: false,
+      yOffset: 0,
+      xOffset: 0,
+      elementWidth: 0,
+      elementHeight: 0,
+    }
+  }
 
   renderedElement;
 
