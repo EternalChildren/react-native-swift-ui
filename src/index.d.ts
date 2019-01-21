@@ -6,7 +6,8 @@ import * as React from "react"
 import {
   Animated, ViewProps, ViewStyle, ImageStyle,
   TextStyle, StyleProp, LayoutChangeEvent, ScrollViewProps,
-  ImageProps, FlatListProps, NativeSyntheticEvent, NativeScrollEvent
+  ImageProps, FlatListProps, NativeSyntheticEvent, NativeScrollEvent,
+  TextProps as NativeTextProps
 } from "react-native"
 
 // SwitchSelector
@@ -609,3 +610,28 @@ export function isEmail (email: string): boolean
 export function isMobile (mobile: string): boolean
 export function isSameDay (one: number, other: number): boolean
 export function isEmojiCharacterInString (str: string): boolean
+
+// Text
+export interface TextProps extends NativeTextProps {
+  h1?: boolean
+  h2?: boolean
+  h3?: boolean
+  h4?: boolean
+  h5?: boolean
+  h6?: boolean
+  color?: string
+  lineHeight?: number
+  style?: StyleProp<TextStyle>
+}
+
+export class Text extends React.Component<TextProps>{ }
+
+// SafeAreaView
+export interface SafeAreaViewProps extends ViewProps {
+  light?: boolean
+  topColor?: string,
+  bottomColor?: string,
+  backgroundColor?: string
+}
+
+export class SafeAreaView extends React.Component<SafeAreaViewProps> { }
