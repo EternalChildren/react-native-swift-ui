@@ -29,26 +29,26 @@ export default class Text extends React.PureComponent {
 const styles = StyleSheet.create({
   h1: {
     fontSize: 32 * screen.pxDp,
-    color: colour.black_262626
+    color: "#262626"
   },
   h2: {
     fontSize: 18 * screen.pxDp,
-    color: colour.black_262626
+    color: "#262626"
   },
   h3: {
     fontSize: 16 * screen.pxDp,
-    color: colour.black_262626
+    color: "#262626"
   },
   h4: {
     fontSize: 14 * screen.pxDp,
-    color: colour.black_262626
+    color: "#262626"
   },
   h5: {
     fontSize: 12 * screen.pxDp,
-    color: colour.black_262626
+    color: "#262626"
   },
   h6: {
     fontSize: 10 * screen.pxDp,
-    color: colour.black_262626
+    color: "#262626"
   }
 })
