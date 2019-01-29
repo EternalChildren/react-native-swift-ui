@@ -12,8 +12,15 @@ export function isIphoneX () {
   const { width, height } = Dimensions.get('window')
   const X_WIDTH = 375
   const X_HEIGHT = 812
+  const XR_WIDTH = 414
+  const XR_HEIGHT = 896
   return Platform.OS === 'ios' &&
-    ((width === X_HEIGHT && height === X_WIDTH) || (width === X_WIDTH && height === X_HEIGHT))
+    (
+      (width === X_HEIGHT && height === X_WIDTH)
+      || (width === X_WIDTH && height === X_HEIGHT)
+      || (width === XR_HEIGHT && height === XR_WIDTH)
+      || (width === XR_WIDTH && height === XR_HEIGHT)
+    )
 }
 
 /**
