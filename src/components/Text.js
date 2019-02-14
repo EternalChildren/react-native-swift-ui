@@ -9,16 +9,14 @@ import screen from '../assets/screen'
 
 export default class Text extends React.PureComponent {
   render () {
-    const { h1, h2, h3, h4, h5, h6, color, lineHeight, style, ...rest } = this.props
+    const { mode, color, lineHeight, style, ...rest } = this.props
     return (
       <NativeText
         {...rest}
         allowFontScaling={false}
         style={[
-          h1 ? styles.h1 : h2 ? styles.h2
-            : h3 ? styles.h3 : h4 ? styles.h4
-              : h5 ? styles.h5 : h6 ? styles.h6 : undefined,
-          { color, lineHeight },
+          styles[mode || "normal_noto"],
+          { color: color || "#000", lineHeight },
           style
         ]}
       />
@@ -27,28 +25,100 @@ export default class Text extends React.PureComponent {
 }
 
 const styles = StyleSheet.create({
-  h1: {
+  h1_noto: {
+    fontFamily: "NotoSansSC-Regular",
+    fontSize: 32 * screen.pxDp
+  },
+  h1_noto_medium: {
+    fontFamily: "NotoSansSC-Medium",
+    fontSize: 32 * screen.pxDp
+  },
+  h1_din: {
+    fontFamily: "DIN-Regular",
+    fontSize: 32 * screen.pxDp
+  },
+  h1_din_medium: {
+    fontFamily: "DIN-Medium",
     fontSize: 32 * screen.pxDp,
-    color: '#262626'
   },
-  h2: {
+  h2_noto: {
+    fontFamily: "NotoSansSC-Regular",
+    fontSize: 18 * screen.pxDp
+  },
+  h2_noto_medium: {
+    fontFamily: "NotoSansSC-Medium",
     fontSize: 18 * screen.pxDp,
-    color: '#262626'
   },
-  h3: {
+  h2_din: {
+    fontFamily: "DIN-Regular",
+    fontSize: 18 * screen.pxDp
+  },
+  h2_din_medium: {
+    fontFamily: "DIN-Medium",
+    fontSize: 18 * screen.pxDp,
+  },
+  normal_noto: {
+    fontFamily: "NotoSansSC-Regular",
     fontSize: 16 * screen.pxDp,
-    color: '#262626'
   },
-  h4: {
+  normal_noto_medium: {
+    fontFamily: "NotoSansSC-Medium",
+    fontSize: 16 * screen.pxDp,
+  },
+  normal_din: {
+    fontFamily: "DIN-Regular",
+    fontSize: 16 * screen.pxDp
+  },
+  normal_din_medium: {
+    fontFamily: "DIN-Medium",
+    fontSize: 16 * screen.pxDp,
+  },
+  s1_noto: {
+    fontFamily: "NotoSansSC-Regular",
+    fontSize: 14 * screen.pxDp
+  },
+  s1_noto_medium: {
+    fontFamily: "NotoSansSC-Medium",
     fontSize: 14 * screen.pxDp,
-    color: '#262626'
   },
-  h5: {
+  s1_din: {
+    fontFamily: "DIN-Regular",
+    fontSize: 14 * screen.pxDp
+  },
+  s1_din_medium: {
+    fontFamily: "DIN-Medium",
+    fontSize: 14 * screen.pxDp,
+  },
+  s2_noto: {
+    fontFamily: "NotoSansSC-Regular",
+    fontSize: 12 * screen.pxDp
+  },
+  s2_noto_medium: {
+    fontFamily: "NotoSansSC-Medium",
     fontSize: 12 * screen.pxDp,
-    color: '#262626'
   },
-  h6: {
+  s2_din: {
+    fontFamily: "DIN-Regular",
+    fontSize: 12 * screen.pxDp
+  },
+  s2_din_medium: {
+    fontFamily: "DIN-Medium",
+    fontSize: 12 * screen.pxDp,
+  },
+  s3_noto: {
+    fontFamily: "NotoSansSC-Regular",
+    fontSize: 10 * screen.pxDp
+  },
+  s3_noto_medium: {
+    fontFamily: "NotoSansSC-Medium",
     fontSize: 10 * screen.pxDp,
-    color: '#262626'
+  },
+  s3_din: {
+    fontFamily: "DIN-Regular",
+    fontSize: 10 * screen.pxDp
+  },
+  s3_din_medium: {
+    fontFamily: "DIN-Medium",
+    fontSize: 10 * screen.pxDp,
   }
 })

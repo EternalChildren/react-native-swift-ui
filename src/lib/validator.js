@@ -16,10 +16,10 @@ export function isIphoneX () {
   const XR_HEIGHT = 896
   return Platform.OS === 'ios' &&
     (
-      (width === X_HEIGHT && height === X_WIDTH)
-      || (width === X_WIDTH && height === X_HEIGHT)
-      || (width === XR_HEIGHT && height === XR_WIDTH)
-      || (width === XR_WIDTH && height === XR_HEIGHT)
+      (width === X_HEIGHT && height === X_WIDTH) ||
+      (width === X_WIDTH && height === X_HEIGHT) ||
+      (width === XR_HEIGHT && height === XR_WIDTH) ||
+      (width === XR_WIDTH && height === XR_HEIGHT)
     )
 }
 

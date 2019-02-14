@@ -491,13 +491,15 @@ export function isSameDay (one: number, other: number): boolean
 export function isEmojiCharacterInString (str: string): boolean
 
 // Text
+export type TextMode = "h1_noto" | "h1_noto_medium" | "h1_din" | "h1_din_medium"
+  | "h2_noto" | "h2_noto_medium" | "h2_din" | "h2_din_medium"
+  | "normal_noto" | "normal_noto_medium" | "normal_din" | "normal_din_medium"
+  | "s1_noto" | "s1_noto_medium" | "s1_din" | "s1_din_medium"
+  | "s2_noto" | "s2_noto_medium" | "s2_din" | "s2_din_medium"
+  | "s3_noto" | "s3_noto_medium" | "s3_din" | "s3_din_medium"
+
 export interface TextProps extends NativeTextProps {
-  h1?: boolean
-  h2?: boolean
-  h3?: boolean
-  h4?: boolean
-  h5?: boolean
-  h6?: boolean
+  mode?: TextMode
   color?: string
   lineHeight?: number
   style?: StyleProp<TextStyle>
