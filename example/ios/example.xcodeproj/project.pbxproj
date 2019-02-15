@@ -39,10 +39,10 @@
 		75B01466BF05400A9D49027A /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87DA9F9590747EDA989957F /* libRNGestureHandler.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		FC5981CB2215107E00E59271 /* NotoSansSC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5981C72215107E00E59271 /* NotoSansSC-Regular.otf */; };
-		FC5981CC2215107E00E59271 /* DIN-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5981C82215107E00E59271 /* DIN-Medium.otf */; };
-		FC5981CD2215107E00E59271 /* NotoSansSC-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5981C92215107E00E59271 /* NotoSansSC-Medium.otf */; };
-		FC5981CE2215107E00E59271 /* DIN-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5981CA2215107E00E59271 /* DIN-Regular.otf */; };
+		FC177BA12216BBAB0026FDED /* NotoSansSC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC177B9D2216BBAB0026FDED /* NotoSansSC-Regular.otf */; };
+		FC177BA22216BBAB0026FDED /* DIN-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC177B9E2216BBAB0026FDED /* DIN-Medium.otf */; };
+		FC177BA32216BBAB0026FDED /* NotoSansSC-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC177B9F2216BBAB0026FDED /* NotoSansSC-Medium.otf */; };
+		FC177BA42216BBAB0026FDED /* DIN-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC177BA02216BBAB0026FDED /* DIN-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -357,10 +357,10 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		E87DA9F9590747EDA989957F /* libRNGestureHandler.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGestureHandler.a; sourceTree = "<group>"; };
-		FC5981C72215107E00E59271 /* NotoSansSC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansSC-Regular.otf"; sourceTree = "<group>"; };
-		FC5981C82215107E00E59271 /* DIN-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Medium.otf"; sourceTree = "<group>"; };
-		FC5981C92215107E00E59271 /* NotoSansSC-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansSC-Medium.otf"; sourceTree = "<group>"; };
-		FC5981CA2215107E00E59271 /* DIN-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Regular.otf"; sourceTree = "<group>"; };
+		FC177B9D2216BBAB0026FDED /* NotoSansSC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansSC-Regular.otf"; sourceTree = "<group>"; };
+		FC177B9E2216BBAB0026FDED /* DIN-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Medium.otf"; sourceTree = "<group>"; };
+		FC177B9F2216BBAB0026FDED /* NotoSansSC-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansSC-Medium.otf"; sourceTree = "<group>"; };
+		FC177BA02216BBAB0026FDED /* DIN-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,7 +500,7 @@
 		13B07FAE1A68108700A75B9A /* example */ = {
 			isa = PBXGroup;
 			children = (
-				FC5981C62215107E00E59271 /* fonts */,
+				FC177B9C2216BBAB0026FDED /* fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -625,15 +625,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC5981C62215107E00E59271 /* fonts */ = {
+		FC177B9C2216BBAB0026FDED /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FC5981C72215107E00E59271 /* NotoSansSC-Regular.otf */,
-				FC5981C82215107E00E59271 /* DIN-Medium.otf */,
-				FC5981C92215107E00E59271 /* NotoSansSC-Medium.otf */,
-				FC5981CA2215107E00E59271 /* DIN-Regular.otf */,
+				FC177B9D2216BBAB0026FDED /* NotoSansSC-Regular.otf */,
+				FC177B9E2216BBAB0026FDED /* DIN-Medium.otf */,
+				FC177B9F2216BBAB0026FDED /* NotoSansSC-Medium.otf */,
+				FC177BA02216BBAB0026FDED /* DIN-Regular.otf */,
 			);
-			path = fonts;
+			name = fonts;
+			path = ../android/app/src/main/assets/fonts;
 			sourceTree = "<group>";
 		};
 		FC93EC6322140677006768F6 /* Recovered References */ = {
@@ -1107,12 +1108,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5981CE2215107E00E59271 /* DIN-Regular.otf in Resources */,
+				FC177BA42216BBAB0026FDED /* DIN-Regular.otf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				FC5981CD2215107E00E59271 /* NotoSansSC-Medium.otf in Resources */,
+				FC177BA32216BBAB0026FDED /* NotoSansSC-Medium.otf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				FC5981CC2215107E00E59271 /* DIN-Medium.otf in Resources */,
-				FC5981CB2215107E00E59271 /* NotoSansSC-Regular.otf in Resources */,
+				FC177BA22216BBAB0026FDED /* DIN-Medium.otf in Resources */,
+				FC177BA12216BBAB0026FDED /* NotoSansSC-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
