@@ -1,6 +1,6 @@
 {
   "name": "react-native-swift-ui",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "",
   "main": "src/index.js",
   "types": "src/index.d.ts",
