@@ -68,7 +68,7 @@ export default class Text extends React.PureComponent {
         style={[
           styles[mode || "normal_noto"],
           lineHeight && { lineHeight },
-          { color: color || "#000" },
+          { color: color || "#262626" },
           style
         ]}
       />
